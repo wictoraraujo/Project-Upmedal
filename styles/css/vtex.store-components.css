@@ -1,0 +1,9 @@
+.logoImage{
+    width: 30%;
+    margin-top: 5px;
+}
+
+.searchBarContainer{
+    width: 500px;
+    margin-left: -500px;
+}
