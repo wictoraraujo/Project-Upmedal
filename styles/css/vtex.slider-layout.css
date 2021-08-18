@@ -1,0 +1,28 @@
+.sliderTrack{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caretIcon{
+    width: 50px;
+    height: 35px;
+    margin-top: 250px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.caretIcon:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.paginationDot{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.paginationDot--isActive{
+    background-color: #59FF00;
+}

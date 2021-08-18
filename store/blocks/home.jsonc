@@ -1,16 +1,34 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text",
+      "slider-layout#images",
       "info-card",
       "info-card#button-left"
     ]
   },
-  "rich-text": { 
+  "slider-layout#images": {
     "props": {
-      "text": "**WDA E-Commerce**",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children": ["image#1", "image#2"]
+  },
+  "image#1": {
+    "props": {
+      "link": "/",
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210817%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210817T172402Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=03b1e88c466863d8feffc0d9a8e7a969921d6663b54f805f9cd0b1ced4d3e4eb"
+    }
+  },
+  "image#2": {
+    "props": {
+      "link": "/",
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210817%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210817T172435Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7d1f7331318a95e9620d6114dcb870205f54c0fa58675d85ad1b2d17c028667d"
     }
   },
   "info-card": {

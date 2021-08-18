@@ -7,3 +7,19 @@
     width: 500px;
     margin-left: -500px;
 }
+
+.compactMode{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid !important;
+}
+
+.imageElement{
+    width: 80%;
+    height: 250px;
+    position: absolute;
+    top: 5px;
+    left: 10%;
+    border-radius: 20px;
+}
