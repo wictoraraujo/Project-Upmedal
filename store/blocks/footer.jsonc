@@ -17,9 +17,9 @@
     ]
   },
 
-  "sticky-layout.#footer-desktop": {
+  "sticky-layout#footer-desktop": {
     "props": {
-      "blockClass": "sticky-header",
+      "blockClass": "sticky-footer",
       "position": "bottom",
       "verticalSpacing": 5
     },
@@ -66,7 +66,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/user.png",
+      "src": "src/user.png",
       "width": 30
     }
   },
@@ -85,7 +85,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/trophy.png",
+      "src": "src/trophy.png",
       "width": 30
     }
   },
@@ -103,7 +103,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/cart.png",
+      "src": "/src/cart.png",
       "width": 30
     }
   },
@@ -121,7 +121,7 @@
     "props": {
       "title": "Logo",
       "href": "https://api.whatsapp.com/send?l=pt-BR&phone=5511964335064&text=Para%20falar%20com%20a%20Gabi%F0%9F%91%B1%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%0A%0AClique%20enviar%F0%9F%91%89%0A%0A------------%0A*D%C3%BAvida%20sobre%3A*%20Volta%20ao%20Mundo%20-%20Combo%0A*ID%3A*%2052292",
-      "url": "assets/whatsapp.png",
+      "src": "src/whatsapp.png",
       "width": 30
     }
   },
