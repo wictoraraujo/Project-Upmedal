@@ -1,0 +1,81 @@
+
+{
+  //Area Product Summary
+"product-summary.shelf#lp": {
+  "children": [
+    "modal-trigger#lp",
+    "product-summary-name",
+    "product-images#lp",
+    "vtex.product-highlights@2.x:product-highlights#1",
+    "vtex.product-highlights@2.x:product-highlights#2",
+    "product-summary-price",
+    "link.product#lp"
+  ],
+  "props": {
+    "blockClass": ["aoba", "teste"]
+  }
+},
+
+"product-images#lp": {
+  
+  "props": {
+    "showNavigationArrows": true,
+    "showPaginationDots": true,
+    "blockClass": "images"
+  }
+},
+"vtex.product-highlights@2.x:product-highlights#1": {
+  "children": [
+    "product-highlight-text#1"
+  ]
+},
+"product-highlight-text#1": {
+  "props": {
+    "message": "PRÉ-LANÇAMENTO"
+  }
+},
+"vtex.product-highlights@2.x:product-highlights#2": {
+  "children": [
+    "product-highlight-text#2"
+  ]
+},
+"product-highlight-text#2": {
+  "props": {
+    "message": "VALIDAÇÃO A PARTIR DE 06/08/2021"
+  }
+},
+"link.product#lp": {
+  "props": {
+    "onClickBehavior": "go-to-product-page",
+    "text": "Ver detalhes",
+    "blockClass": "addToCart"
+  }
+},
+"modal-trigger#lp": {
+  "children": [
+    "rich-text#lp",
+    "modal-layout#lp"
+  ]
+},
+"rich-text#lp": {
+  "props": {
+    "text": "▶"
+  }
+},
+"modal-layout#lp": {
+  "children": [
+    "video#lp"
+  ]
+},
+"video#lp": {
+  "props": {
+    "width": "100%",
+    "height": "400px",
+    "loop": false,
+    "autoPlay": true,
+    "muted": false,
+    "src": "https://youtu.be/vVNF4OASRDI",
+    "blockClass": "videoEl"
+  }
+}
+}

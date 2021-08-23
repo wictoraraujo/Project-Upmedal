@@ -1,12 +1,13 @@
-.input{
+.input :global(.vtex-input){
     font-size: 16px;
     background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid;
+    border: none;
+    color: white;
 }
 
-.input:focus{
+.input :global(.vtex-input):focus{
     outline: #59FF00;
-    border-color: #59FF00;
+    border-bottom: 2px solid #59FF00;
 }
 
 .input::placeholder{
@@ -16,5 +17,4 @@
 .input:focus::placeholder{
     color: #59FF00;
 }
-
 

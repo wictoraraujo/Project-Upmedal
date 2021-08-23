@@ -1,60 +1,188 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
-      "slider-layout#images",
-      "info-card",
-      "info-card#button-left"
+      "tab-layout#home",
+      "search-result-layout.customQuery"
     ]
   },
-  "slider-layout#images": {
+  
+  //Area do Search Results
+
+  "search-result-layout.customQuery": {
+    "props": [
+      "search-result-layout.customQuery#promocao",
+      "search-result-layout.customQuery#corinthians",
+      "search-result-layout.customQuery#palmeiras",
+      "search-result-layout.customQuery#signos",
+      "search-result-layout.customQuery#guerreiros",
+      "search-result-layout.customQuery#7maravilhas"
+    ]
+  },
+
+  //Area Search result Promoção
+  "search-result-layout.customQuery#promocao": {
     "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "153",
+        "mapField": "productClusterIds"
+      }
     },
-    "children": ["image#1", "image#2"]
+    "blocks": [
+      "search-result-layout.desktop#lp",
+      "search-result-layout.mobile#lp"
+    ]
   },
-  "image#1": {
+
+  //Area Search result Corinthians
+  "search-result-layout.customQuery#corinthians": {
     "props": {
-      "link": "/",
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210817%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210817T172402Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=03b1e88c466863d8feffc0d9a8e7a969921d6663b54f805f9cd0b1ced4d3e4eb"
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "154",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#lp",
+      "search-result-layout.mobile#lp"
+    ]
+  },
+
+  //Area Search result Palmeiras
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "155",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#lp",
+      "search-result-layout.mobile#lp"
+    ]
+  },
+
+  //Area Search result Signos
+  "search-result-layout.customQuery#signos": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "156",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#lp",
+      "search-result-layout.mobile#lp"
+    ]
+  },
+
+
+  //Area Search result Guerreiros
+  "search-result-layout.customQuery#guerreiros": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "157",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#lp",
+      "search-result-layout.mobile#lp"
+    ]
+  },
+
+
+  //Area Search result 7Maravilhas
+  "search-result-layout.customQuery#7maravilhas": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "hideUnavailableItems": true,
+        "queryField": "157",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#lp",
+      "search-result-layout.mobile#lp"
+    ]
+  },
+
+  
+  "search-result-layout.desktop#lp": {
+    "children": [
+      "slider-layout#images",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "preventRouteChange": true
     }
   },
-  "image#2": {
+  "flex-layout.row#result": {
+    "children": [
+      "search-content#lp"
+    ]
+  },
+  "search-content#lp": {
+    "blocks": [
+      "gallery#lp",
+      "not-found"
+    ]
+  },
+  "search-result-layout.mobile#lp": {
+    "children": [
+      "slider-layout#images",
+      "flex-layout.row#result"
+    ],
     "props": {
-      "link": "/",
-      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210817%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210817T172435Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7d1f7331318a95e9620d6114dcb870205f54c0fa58675d85ad1b2d17c028667d"
+      "preventRouteChange": true
     }
   },
-  "info-card": {
+  
+
+  //Area das Galerias
+  "gallery#lp": {
     "props": {
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Beautiful decoration vintage in color pink",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAligment": "center"
-    }
-  },
-  "info-card#button-left": {
-    "props": {
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-      "headline": "Shining chrome",
-      "subhead": "Give your kitchen a cool style adding warm metallic finishes",
-      "callToActionMode": "link",
-      "callToActionText": "Go to Collection",
-      "callToActionUrl": "/sale/d",
-      "textAligment": "center"
-    }
+      "layouts": [
+        {
+        "name": "grid",
+        "component": "GridSummary",
+        "itemsPerRow": {
+          "(min-width:1300px)": 2,
+          "desktop": 2,
+          "tablet": 2,
+          "phone": 1
+        }
+      },
+      {
+        "name": "list",
+        "component": "ListSummary",
+        "itemsPerRow": 1
+      }
+    ],
+    "ListSummary": "product-summary.shelf#lp",
+    "GridSummary": "product-summary.shelf#lp"
   }
+}
 }

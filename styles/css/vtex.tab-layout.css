@@ -1,0 +1,31 @@
+.listContainer{
+    position: relative;
+    margin-bottom: 6px;
+    display: flex;
+    z-index: 998;
+    background-color: rgba(0, 0, 0, 0.73);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.--footer{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.listItem :global(.vtex-button){
+    background-color: transparent;
+    font-family: monospace;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 0;
+}
+
+
+.listItem :global(.vtex-button):hover{
+    background-color: transparent;
+}
+
+.listItemActive :global(.vtex-button){
+    border: none;
+    border-bottom: 2px solid #59FF00;
+    border-radius: 0;
+}

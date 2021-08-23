@@ -1,0 +1,31 @@
+.element{
+    height: 500px;
+}
+
+.container--aoba{
+    background-color: rgba(250, 250, 250, 0.2);
+}
+
+.productBrand{
+    color: white;
+}
+
+.nameContainer{
+    margin: 0 auto;
+}
+
+.priceContainer{
+    width: 80px;
+    margin: 0 auto;
+}
+
+.sellingPrice{
+    color: #59FF00; 
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.installmentContainer{
+    display: none;
+}
